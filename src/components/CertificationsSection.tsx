@@ -48,28 +48,28 @@ export default function CertificationsSection() {
       <div className="max-w-4xl mx-auto">
         <h2 className={`text-4xl font-bold mb-8 ${colors.text}`}>{t('certifications')}</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative`}>
+          <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative pt-24 md:pt-6`}>
             <div className="absolute top-4 right-4">
               <Image
                 src="/images/introduction_to_cybersecurity.png"
                 alt="Cisco Introduction to Cybersecurity Logo"
-                width={64}
-                height={64}
-                className="h-16 w-auto"
+                width={48}
+                height={48}
+                className="h-12 w-auto"
               />
             </div>
             <div className={`${colors.title} font-bold mb-2`}>{t('completed')}</div>
             <h3 className="text-lg font-bold mb-2">{t('cisco1')}</h3>
             <p className="text-gray-400 text-sm">{t('ciscoDesc1')}</p>
           </div>
-          <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative`}>
+          <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative pt-24 md:pt-6`}>
             <div className="absolute top-4 right-4">
               <Image
                 src="/images/junior_cybersecurity_analyst_career_path.png"
                 alt="Cisco Junior Cybersecurity Analyst Logo"
-                width={64}
-                height={64}
-                className="h-16 w-auto"
+                width={48}
+                height={48}
+                className="h-12 w-auto"
               />
             </div>
             <div className={`${colors.title} font-bold mb-2`}>{t('completed')}</div>
@@ -78,7 +78,7 @@ export default function CertificationsSection() {
           </div>
         </div>
 
-        <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all mb-8 relative`}>
+        <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all mb-8 relative pt-24 md:pt-6`}>
           <div className="absolute top-4 right-4">
             <Image
               src="/images/net_plus_sec_plus.png"
@@ -105,7 +105,7 @@ export default function CertificationsSection() {
           </div>
         </div>
 
-        <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative`}>
+        <div className={`bg-gray-900 p-6 rounded-lg border ${colors.cardBorder} transition-all relative pt-24 md:pt-6`}>
           <div className="absolute top-4 right-4">
             <Image
               src="/images/letsdefend-logo.png"
