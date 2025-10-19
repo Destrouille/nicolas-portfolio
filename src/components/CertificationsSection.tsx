@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function CertificationsSection() {
@@ -18,7 +19,7 @@ export default function CertificationsSection() {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-green-500/5 border-y border-green-500/20">
+    <section id="certifications" className="py-20 px-6 bg-green-500/5 border-y border-green-500/20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-green-500">{t('certifications')}</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -34,8 +35,17 @@ export default function CertificationsSection() {
           </div>
         </div>
 
-        {/* CompTIA - Horizontal Bar */}
-        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8">
+        {/* CompTIA - Horizontal Bar with Logo */}
+        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative">
+          <div className="absolute top-4 right-4 w-16 h-16">
+            <Image
+              src="/images/comptia-network-plus-logo.png"
+              alt="CompTIA Network+ & Security+ Logo"
+              width={64}
+              height={64}
+              className="w-full h-full object-contain"
+            />
+          </div>
           <div className="text-yellow-500 font-bold mb-2">{t('inProgress')}</div>
           <h3 className="text-lg font-bold mb-2">{t('comptia')}</h3>
           <p className="text-gray-400 text-sm mb-4">{t('comptiaDesc')}</p>
@@ -53,8 +63,17 @@ export default function CertificationsSection() {
           </div>
         </div>
 
-        {/* LetsDefend - Horizontal Bar */}
-        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all">
+        {/* LetsDefend - Horizontal Bar with Logo */}
+        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all relative">
+          <div className="absolute top-4 right-4 w-16 h-16">
+            <Image
+              src="/images/letsdefend-logo.png"
+              alt="LetsDefend Logo"
+              width={64}
+              height={64}
+              className="w-full h-full object-contain"
+            />
+          </div>
           <div className="text-cyan-400 font-bold mb-2">{t('focusPath')}</div>
           <h3 className="text-lg font-bold mb-2">{t('letsdefend')}</h3>
           <p className="text-gray-400 text-sm mb-4">{t('letsdefendDesc')}</p>

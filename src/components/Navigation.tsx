@@ -15,7 +15,7 @@ export default function Navigation() {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const navItems: string[] = ['about', 'skills', 'projects', 'soc', 'contact'];
+  const navItems: string[] = ['about', 'skills', 'certifications', 'projects', 'soc', 'contact'];
 
   return (
     <nav className="fixed top-0 w-full bg-black/95 backdrop-blur border-b border-green-500/20 z-50">
