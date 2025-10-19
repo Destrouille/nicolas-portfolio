@@ -23,12 +23,30 @@ export default function CertificationsSection() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-green-500">{t('certifications')}</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all">
+          <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all relative">
+            <div className="absolute top-4 right-4">
+              <Image
+                src="/images/introduction_to_cybersecurity.png"
+                alt="Cisco Introduction to Cybersecurity Logo"
+                width={64}
+                height={64}
+                className="h-16 w-auto"
+              />
+            </div>
             <div className="text-green-400 font-bold mb-2">{t('completed')}</div>
             <h3 className="text-lg font-bold mb-2">{t('cisco1')}</h3>
             <p className="text-gray-400 text-sm">{t('ciscoDesc1')}</p>
           </div>
-          <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all">
+          <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all relative">
+            <div className="absolute top-4 right-4">
+              <Image
+                src="/images/junior_cybersecurity_analyst_career_path.png"
+                alt="Cisco Junior Cybersecurity Analyst Logo"
+                width={64}
+                height={64}
+                className="h-16 w-auto"
+              />
+            </div>
             <div className="text-green-400 font-bold mb-2">{t('completed')}</div>
             <h3 className="text-lg font-bold mb-2">{t('cisco2')}</h3>
             <p className="text-gray-400 text-sm">{t('ciscoDesc2')}</p>
@@ -36,21 +54,14 @@ export default function CertificationsSection() {
         </div>
 
         {/* CompTIA - Horizontal Bar with Logo */}
-        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative pr-32">
-          <div className="absolute top-4 right-4 flex gap-4">
+        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative">
+          <div className="absolute top-4 right-4">
             <Image
-              src="/images/comptia-network-plus-logo.png"
-              alt="CompTIA Network+ Logo"
-              width={70}
-              height={70}
-              className="h-20 w-auto"
-            />
-            <Image
-              src="/images/comptia-security-plus-logo.png"
-              alt="CompTIA Security+ Logo"
-              width={70}
-              height={70}
-              className="h-20 w-auto"
+              src="/images/net_plus_sec_plus.png"
+              alt="CompTIA Network+ & Security+ Logo"
+              width={64}
+              height={64}
+              className="h-16 w-auto"
             />
           </div>
           <div className="text-yellow-500 font-bold mb-2">{t('inProgress')}</div>
