@@ -32,23 +32,6 @@ export default function ContactSection() {
             {t('linkedinBtn')}
           </a>
         </div>
-
-        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/20 hover:border-green-500 transition-all text-gray-400 text-sm">
-          <p>
-            Email: <span className="text-green-400">nicolas.callegari@efrei.net</span>
-          </p>
-          <div className="mt-6 pt-6 border-t border-green-500/20">
-            <a
-              href="https://www.linkedin.com/in/nicolas-call%C3%A9gari-9b2501252/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-green-500 hover:text-green-400 transition-colors"
-            >
-              <Linkedin size={16} />
-              <span className="text-sm">{t('connectLinkedin')}</span>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

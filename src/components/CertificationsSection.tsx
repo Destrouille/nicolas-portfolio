@@ -37,13 +37,20 @@ export default function CertificationsSection() {
 
         {/* CompTIA - Horizontal Bar with Logo */}
         <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative">
-          <div className="absolute top-4 right-4 w-16 h-16">
+          <div className="absolute top-4 right-4 flex gap-2">
             <Image
               src="/images/comptia-network-plus-logo.png"
-              alt="CompTIA Network+ & Security+ Logo"
-              width={64}
-              height={64}
-              className="w-full h-full object-contain"
+              alt="CompTIA Network+ Logo"
+              width={56}
+              height={56}
+              className="w-14 h-14 object-contain"
+            />
+            <Image
+              src="/images/comptia-security-plus-logo.png"
+              alt="CompTIA Security+ Logo"
+              width={56}
+              height={56}
+              className="w-14 h-14 object-contain"
             />
           </div>
           <div className="text-yellow-500 font-bold mb-2">{t('inProgress')}</div>
