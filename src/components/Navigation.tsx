@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/lib/translations';
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navigation() {
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const navItems = ['about', 'skills', 'projects', 'soc', 'contact'];
+  const navItems: string[] = ['about', 'skills', 'projects', 'soc', 'contact'];
 
   return (
     <nav className="fixed top-0 w-full bg-black/95 backdrop-blur border-b border-green-500/20 z-50">
