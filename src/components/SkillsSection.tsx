@@ -23,6 +23,7 @@ export default function SkillsSection() {
     'Trello • PowerBI • Office Suite',
     'theHarvester • John the Ripper',
     'Log Management • VirusTotal',
+    'ProxMox • vSphere • VMware ESXi',
   ];
 
   const themeColors = {

@@ -39,7 +39,12 @@ export default function Navigation() {
   return (
     <nav className={`fixed top-0 w-full bg-black/95 backdrop-blur border-b ${colors.border} z-50`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className={`text-2xl font-bold ${colors.text}`}>NC</div>
+        <button
+          onClick={() => scrollToSection('about')}
+          className={`text-2xl font-bold ${colors.text} hover:opacity-80 transition-opacity`}
+        >
+          NC
+        </button>
 
         <div className="hidden md:flex gap-8 items-center">
           {navItems.map((item: string) => (
