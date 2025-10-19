@@ -36,26 +36,22 @@ export default function CertificationsSection() {
         </div>
 
         {/* CompTIA - Horizontal Bar with Logo */}
-        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative">
-          <div className="absolute top-4 right-4 flex gap-3">
-            <div className="w-16 h-16 flex items-center justify-center bg-gray-800 rounded border border-green-500/20">
-              <Image
-                src="/images/comptia-network-plus-logo.png"
-                alt="CompTIA Network+ Logo"
-                width={60}
-                height={60}
-                className="w-full h-full object-contain p-1"
-              />
-            </div>
-            <div className="w-16 h-16 flex items-center justify-center bg-gray-800 rounded border border-green-500/20">
-              <Image
-                src="/images/comptia-security-plus-logo.png"
-                alt="CompTIA Security+ Logo"
-                width={60}
-                height={60}
-                className="w-full h-full object-contain p-1"
-              />
-            </div>
+        <div className="bg-gray-900 p-6 rounded-lg border border-green-500/30 hover:border-green-500 transition-all mb-8 relative pr-32">
+          <div className="absolute top-4 right-4 flex gap-4">
+            <Image
+              src="/images/comptia-network-plus-logo.png"
+              alt="CompTIA Network+ Logo"
+              width={70}
+              height={70}
+              className="h-20 w-auto"
+            />
+            <Image
+              src="/images/comptia-security-plus-logo.png"
+              alt="CompTIA Security+ Logo"
+              width={70}
+              height={70}
+              className="h-20 w-auto"
+            />
           </div>
           <div className="text-yellow-500 font-bold mb-2">{t('inProgress')}</div>
           <h3 className="text-lg font-bold mb-2">{t('comptia')}</h3>
