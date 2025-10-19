@@ -22,13 +22,13 @@ export default function Navigation() {
         <div className="text-2xl font-bold text-green-500">NC</div>
 
         <div className="hidden md:flex gap-8 items-center">
-          {navItems.map(item => (
+          {navItems.map((item: string) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
               className="capitalize text-gray-300 hover:text-green-500 transition-colors text-sm"
             >
-              {t(item as any)}
+              {t(item as keyof typeof translations.en)}
             </button>
           ))}
           
@@ -53,13 +53,13 @@ export default function Navigation() {
 
       {menuOpen && (
         <div className="md:hidden bg-black border-t border-green-500/20 p-4 space-y-4">
-          {navItems.map(item => (
+          {navItems.map((item: string) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
               className="block w-full text-left capitalize text-gray-300 hover:text-green-500 transition-colors"
             >
-              {t(item as any)}
+              {t(item as keyof typeof translations.en)}
             </button>
           ))}
           
